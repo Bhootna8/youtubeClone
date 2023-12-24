@@ -20,7 +20,7 @@ const HeroBar = () => {
          {heroData.map((data, index)=> {
             return (
                 
-                  <p onClick={()=> {
+                  <p key={index} onClick={()=> {
                     search(data);
                     router.push(`/search/${data}`)
                     
